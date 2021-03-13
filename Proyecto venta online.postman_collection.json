@@ -1,0 +1,590 @@
+{
+	"info": {
+		"_postman_id": "79cd1f31-f160-4a28-8903-cd4a9928b2d8",
+		"name": "Proyecto venta online",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "agregarUsuario",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "nombre",
+							"value": "Cesar",
+							"type": "text"
+						},
+						{
+							"key": "username",
+							"value": "clopez2019156",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "123456",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/api/agregarUsuario",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"agregarUsuario"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "username",
+							"value": "clopez2019156",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "123456",
+							"type": "text"
+						},
+						{
+							"key": "getToken",
+							"value": "true",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/api/login",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "editarUsuario",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MDRjMmM1MDY0MTI1ZDMxNjhjOGFlZmYiLCJub21icmUiOiJDZXNhciIsInVzZXJuYW1lIjoiY2xvcGV6LTIwMTkxNTYiLCJyb2wiOiJST0xfQ0xJRU5URSIsImlhdCI6MTYxNTYwNTMzMCwiZXhwIjoxNjE2MDM3MzMwfQ.qmE6IgD1jh9w5fbD2ZrCj9lJpnXAv3aAQUJGH5sL1uE",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "username",
+							"value": "cesarlopez-2019156",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/api/editarUsuario",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"editarUsuario"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "eliminarUsuario",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MDRjMmM1MDY0MTI1ZDMxNjhjOGFlZmYiLCJub21icmUiOiJDZXNhciIsInVzZXJuYW1lIjoiY2VzYXJsb3Blei0yMDE5MTU2Iiwicm9sIjoiUk9MX0NMSUVOVEUiLCJpYXQiOjE2MTU2MDU0MzksImV4cCI6MTYxNjAzNzQzOX0.CFHYEbn2PoLMCeY6egzYOKYgkJW_520buC0JL7W2J9I",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "idUsuario",
+							"value": "604c2c5064125d3168c8aeff",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/api/eliminarUsuario",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"eliminarUsuario"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "username",
+							"value": "Administrador",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "123456",
+							"type": "text"
+						},
+						{
+							"key": "getToken",
+							"value": "true",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/api/login",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "agregarCategoria",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MDRjMWZjYmM3M2EyYjFkNDhhYTE3ZTMiLCJub21icmUiOiJBZG1pbmlzdHJhZG9yIiwidXNlcm5hbWUiOiJBZG1pbmlzdHJhZG9yIiwicm9sIjoiUk9MX0FETUlOIiwiaWF0IjoxNjE1NjA1NzY5LCJleHAiOjE2MTYwMzc3Njl9.LoeSSps9gVx5N5QcBZ18eknxGDR_GLM5d-64wohboJU",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "nombre",
+							"value": "video Juegos",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/api/agregarCategoria",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"agregarCategoria"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "editarCategoria",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MDRjMWZjYmM3M2EyYjFkNDhhYTE3ZTMiLCJub21icmUiOiJBZG1pbmlzdHJhZG9yIiwidXNlcm5hbWUiOiJBZG1pbmlzdHJhZG9yIiwicm9sIjoiUk9MX0FETUlOIiwiaWF0IjoxNjE1NjA1NzY5LCJleHAiOjE2MTYwMzc3Njl9.LoeSSps9gVx5N5QcBZ18eknxGDR_GLM5d-64wohboJU",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "nombre",
+							"value": "Video Casets",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/api/editarCategoria/:id?",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"editarCategoria",
+						":id"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": null
+						}
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "604c310064125d3168c8af02"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "eliminarCategoria",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MDRjMWZjYmM3M2EyYjFkNDhhYTE3ZTMiLCJub21icmUiOiJBZG1pbmlzdHJhZG9yIiwidXNlcm5hbWUiOiJBZG1pbmlzdHJhZG9yIiwicm9sIjoiUk9MX0FETUlOIiwiaWF0IjoxNjE1NjA1NzY5LCJleHAiOjE2MTYwMzc3Njl9.LoeSSps9gVx5N5QcBZ18eknxGDR_GLM5d-64wohboJU",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": []
+				},
+				"url": {
+					"raw": "localhost:3000/api/eliminarCategoria/:id",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"eliminarCategoria",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "604c310064125d3168c8af02"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "obtenerCategorias",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/api/obtenerCategorias",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"obtenerCategorias"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "agregarProducto",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MDRjMWZjYmM3M2EyYjFkNDhhYTE3ZTMiLCJub21icmUiOiJBZG1pbmlzdHJhZG9yIiwidXNlcm5hbWUiOiJBZG1pbmlzdHJhZG9yIiwicm9sIjoiUk9MX0FETUlOIiwiaWF0IjoxNjE1NjA2NjM3LCJleHAiOjE2MTYwMzg2Mzd9.n4aa_Svig7OS1EZnX1LAIYdFO1WJkbDhFanTJNowPek",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "nombre",
+							"value": "Hulk",
+							"type": "text"
+						},
+						{
+							"key": "precio",
+							"value": "500",
+							"type": "text"
+						},
+						{
+							"key": "cantidad",
+							"value": "10",
+							"type": "text"
+						},
+						{
+							"key": "idCategoria",
+							"value": "604c2c0964125d3168c8aefd",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/api/agregarProducto",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"agregarProducto"
+					],
+					"query": [
+						{
+							"key": "nombre",
+							"value": null,
+							"disabled": true
+						},
+						{
+							"key": "precio",
+							"value": null,
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "editarProducto",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MDRjMWZjYmM3M2EyYjFkNDhhYTE3ZTMiLCJub21icmUiOiJBZG1pbmlzdHJhZG9yIiwidXNlcm5hbWUiOiJBZG1pbmlzdHJhZG9yIiwicm9sIjoiUk9MX0FETUlOIiwiaWF0IjoxNjE1NjA2NjM3LCJleHAiOjE2MTYwMzg2Mzd9.n4aa_Svig7OS1EZnX1LAIYdFO1WJkbDhFanTJNowPek",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "nombre",
+							"value": "hulk 2003",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/api/editarProducto/:id",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"editarProducto",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "604c337664125d3168c8af03"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "obtenerProductos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/api/obtenerProductos",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"obtenerProductos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "obtenerProductosCategoria",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MDRjMWZjYmM3M2EyYjFkNDhhYTE3ZTMiLCJub21icmUiOiJBZG1pbmlzdHJhZG9yIiwidXNlcm5hbWUiOiJBZG1pbmlzdHJhZG9yIiwicm9sIjoiUk9MX0FETUlOIiwiaWF0IjoxNjE1NjA2NjM3LCJleHAiOjE2MTYwMzg2Mzd9.n4aa_Svig7OS1EZnX1LAIYdFO1WJkbDhFanTJNowPek",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:3000/api/obtenerProductosCategoria/:id",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"obtenerProductosCategoria",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "604c2c0964125d3168c8aefd"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "obtenerPorNombre",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "nombre",
+							"value": "hulk 2003",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/api/obtenerPorNombre",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"obtenerPorNombre"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "eliminarProducto",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MDRjMWZjYmM3M2EyYjFkNDhhYTE3ZTMiLCJub21icmUiOiJBZG1pbmlzdHJhZG9yIiwidXNlcm5hbWUiOiJBZG1pbmlzdHJhZG9yIiwicm9sIjoiUk9MX0FETUlOIiwiaWF0IjoxNjE1NjA1NzY5LCJleHAiOjE2MTYwMzc3Njl9.LoeSSps9gVx5N5QcBZ18eknxGDR_GLM5d-64wohboJU",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "idCategoria",
+							"value": "604c337664125d3168c8af03",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/api/eliminarProducto/:id",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"eliminarProducto",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "604c337664125d3168c8af03"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "obtenerAgotados",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/api/obtenerAgotados",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"obtenerAgotados"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
